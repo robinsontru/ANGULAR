@@ -1,1 +1,68 @@
-<p>agregar works!</p>
+<!-- <div class="conteiner">
+    <p>agregar equipo</p>
+    <div class="row"></div>
+    <div class="col-sm-6">
+        <form action="">
+            <div class="mb-3" >
+                <label class="form-label ">Nombre de el equipo</label>
+                <input [(ngModel)]="equipo.nombre" type="text" name="nombre" id="" class="form-control">
+                
+            </div>
+    <div class="mb-3" >
+        <label class="form-label ">logo</label>
+        <input [(ngModel)]="equipo.logo" type="text" name="logo" id="" class="form-control">
+    </div>
+    <div>
+        <button onclick="agregar()" type="button" class="btn btn-success">Success</button>
+
+    </div>
+    
+        
+        </form>
+    </div>
+    <div class="col-sm-6">
+        <img src="{{equipo.logo}}" width="100" height="100">
+
+    </div>
+
+    <div class="col-sm-6">
+        <label class="form-label">{{equipo.nombre}}</label>
+
+    </div>
+</div> -->
+<div class="container">
+    <p>AGREGAR EQUIPO</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nombre de Equipo</label>
+                    <input [(ngModel)]="equipo.nombre" type="text" class="form-control" name="nombre">
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">logo</label>
+                    <input [(ngModel)]="equipo.logo" type="text" class="form-control" name="nombre">
+                </div>
+                
+                <button (click)="agregar()" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+
+
+        <div class="col-sm-6">
+            <form>
+                <div class="mb-3">
+                    <img src="{{equipo.logo}}" width="100" height="100" alt="">
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">{{equipo.nombre}}</label>
+                </div>
+                
+            </form>
+        </div>
+
+    </div>
+    
+</div>

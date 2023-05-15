@@ -1,1 +1,41 @@
-<p>inicio works!</p>
+
+
+<div class="container" >
+  <p>ilista de equipos</p>
+  <button  routerLink="/add" type="button" class="btn btn-secondary">agregar</button>
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Logo</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+ 
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let equipo of ListarEquipo" >
+        <th>{{equipo.id_equipo}}</th>
+        <th>{{equipo.nombre}}</th>
+        <!-- <th>{{equipo.logo}}</th> -->
+        <th> <img src="{{equipo.logo}}" alt="" width="70" height="70" > </th>
+        <td>
+          <button onclick="modificar(equipo.id_equipo)" type="button" class="btn btn-primary">Editar</button>
+        </td>
+    
+        <td>
+          <!-- <button (click)="eliminar(equipo.id_equipo)" type="button" class="btn btn-info">Eliminar</button> -->
+   <button  onclick="eliminar(equipo.id_equipo)" type="button" class="btn btn-secondary">Eliminar</button>
+
+        </td>
+           
+
+      </tr>
+    </tbody>
+  </table>
+</div>

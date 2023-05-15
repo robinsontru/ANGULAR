@@ -64,6 +64,8 @@
             },
             "development": {
               "browserTarget": "crud_basico_angular:build:development"
+              ,
+              "proxyConfig":"proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
